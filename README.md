@@ -1,5 +1,7 @@
 # aws-for-fluent-bit
 
+* see branch "cloudwatch-hardcode" for :cloudwatch-hardcode tag.
+
 Usage:
 pr-cloudwatch.conf - Used for logging sidecar to send logs in a container via shared mount.
 
