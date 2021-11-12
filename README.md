@@ -13,12 +13,12 @@ Environmental Variables used for Output configuration
 Used to construct Cloudwatch log stream name
 /AWS_CLOUDWATCH_LOG_STREAM_PREFIX/LOG_SOURCE_APP_NAME/~filepath~
 
-Sample Cloudformation conference
+Sample Cloudformation config
 ```
 MountPoints:
   - ContainerPath: /tmp/logdir/
     ReadOnly: false
-    SourceVolume: !Join ["_", [!Ref 'StackName', 'log_dir']]
+    SourceVolume: shared_volume_name
 FirelensConfiguration:
   Type: fluentbit
   Options:
